@@ -203,7 +203,7 @@
     font-family: "Lage Grafica";
 }
 /* media query */
-.mediaquery{
+.mediaquery {
     height: 200px;
     width: 1200px;
     background-color: red;
@@ -212,8 +212,34 @@
     /* abaixo de 1000 fica azul e tem uma largura de 500px */
     .mediaquery{
         width:500px ;
-        background-color:blue ;
+        background-color:rgb(19, 170, 27) ;
     }
 }
-
+@media (max-width: 768px){
+    .mediaquery{
+        width:300px ;
+        background-color:rgb(8, 11, 170) ;
+    }
+}
+@media (max-width: 512px){
+    /* abaixo de 1000 fica azul e tem uma largura de 500px */
+    .mediaquery{
+        width:200px ;
+        background-color:rgb(17, 155, 197) ;
+    }
+}
+/* border radius */
+.div-border{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin: 20px;
+}
+.border-radius1{
+    border-radius: 50%;   /*assim temos um círculo hahahaha*/
+}
+.border-radius2{
+    border-top-right-radius: 20px;/*direito superior*/
+    border-bottom-left-radius: 40px;/*esquerdo inferior*/
+}
 

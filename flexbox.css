@@ -1,0 +1,52 @@
+body{
+    background-color: #ddd;
+}
+.container{
+    display: flex;/*"flex" ja deixa como se estivesse inline*/
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    /*flex-direction: column-reverse;*/
+    /*flex-direction = define a direção principal dos itens*/
+    /*row-reverse = inverte a sequencia da linha de blocos*/
+    /*column/column-reverse = organiza em colunas/ colunas inversas*/
+    justify-content: center;
+    /*justify-content = centralizar na horizontal*/
+    /*space-evenly = add um espaço igual entre os elementos*/
+    /*space-around = mesma coisa que o between,só add uma borda*/
+    /*space-between = elementos espaçados igualmente entre si*/
+    /*flex end = fica no fim do container(na parte direita)*/
+    /*flex start = fica no começo do container(na parte esquerda)*/
+    align-items:center ;
+    /*align-items = centralizar na vertical*/
+    /*flex end = fica no fim do container(na parte de baixo)*/
+    /*flex start = fica no começo do container(na parte de cima)*/
+    /*stretch = deixa os elemento na largura maxima da tela*/
+
+}
+.box{
+    height: 100px;
+    /* flex: 1 1 300px; */
+    /*<grow>,<shrink>,<basis>*/
+    /* flex-grow: faz aumentar o tamnho;
+    flex-basis:
+    /* define o tamanho inicial dos elementos, em unidades de pixel, 
+    antes que o espaço remanescente seja redistribuído*/
+    /*flex-shrink: esse reduz o tamanho,oposto do flex-grow*/
+    width: 100px;
+}
+.first{
+    background-color: pink;
+    /* order: 3; */
+    /* order = ordena a sequencia dos itens */
+    align-self: self-end;
+}
+.second{
+    background-color: rgb(71, 141, 118);
+    align-self: flex-start ;
+    /*align-self = alinhar 1 item apenas,verticalmente*/
+}
+.third{
+    background-color: rgb(19, 113, 175);
+}
+
